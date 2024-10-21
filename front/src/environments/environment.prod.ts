@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-	apiUrl: 'https://kc3tdsezn4.execute-api.us-east-2.amazonaws.com',
+	apiUrl: 'http://localhost:8080.com',
 	rickMortyUrl: 'https://rickandmortyapi.com/api'
 };	
