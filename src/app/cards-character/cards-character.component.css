@@ -1,9 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-	background-color: rgb(1, 7, 43);
-}
-
-/* .content {
+.content {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-template-rows: 1fr;
@@ -12,18 +7,44 @@ body {
 	align-items: center;
 	padding: 10px 50px;
 }
+.header{
+	color: #88e23b;
+	height: 50px;
+	padding-left:10px;
+	padding-top: 10px;
+}
+
+
+.header__options-icon :hover {
+	color: red;
+	cursor: pointer;
+}
+
 
 .card {
 	color: #88e23b;
-	background-color: #02294d;;
+	background-color: #02294d;
 	position: relative;
-	min-height: 515px;
+	min-height: 520px;
+	border-radius: 25px;
+}
+
+.card__body-image{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.card__body-image img{
+	max-width: 90%;
+	border-radius: 25px;
 }
 
 .card__options{
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 5px;
+	right: 10px;
 }
 
 .card__options :hover {
@@ -113,7 +134,4 @@ body {
 .material-symbols-outlined :hover {
 	color: red;
 	cursor: pointer;
-} */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+}

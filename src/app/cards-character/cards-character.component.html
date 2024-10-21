@@ -1,0 +1,37 @@
+<div class="header">
+	<div class="header__options">
+		<mat-icon aria-hidden="false" fontIcon="person_add" (click)="createNewCharacter()" class="header__options-icon"></mat-icon>
+	</div>
+
+</div>
+
+<div class="content">
+
+	<div class="card" *ngFor="let character of characters; let index = index">
+		<div class="card__options">
+			<mat-icon aria-hidden="false" fontIcon="edit" (click)="editCharacter(character.id, character.name)" class="header__options-icon"></mat-icon>
+			<mat-icon aria-hidden="false" fontIcon="delete" (click)="deleteCharacter(character.id, character.name)" class="header__options-icon"></mat-icon>
+		</div>
+		
+		<div class="card__header">
+			<h2>{{character.name}}</h2>
+			<div class="card__header-info">
+				<span class="card__header-status--{{character.status.toLowerCase()}}"></span>
+				<p>{{character.status}}-{{character.species}}</p>
+			</div>
+		</div>
+	
+		<div class="card__body">
+			<div class="card__body-image">
+				<img src="{{character.image}}" alt="{{character.name}}">
+			</div>
+			<div class="card__body-description">
+				<p>Origin: {{character.origin}}</p>
+				<p>Location: {{character.location}}</p>
+				<p>Gener: {{character.gender}}</p>
+				<p>{{character.type}}</p>
+			</div>
+		</div>
+	
+	</div>
+</div>
